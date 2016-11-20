@@ -4,11 +4,11 @@ angular.module("contactsApp", ['ngRoute'])
             .when("/", {
                 templateUrl: "list.html",
                 controller: "ListController",
-                resolve: {
-                    contacts: function(Contacts) {
-                        return Contacts.getContacts();
-                    }
-                }
+//                resolve: {
+  //                  contacts: function(Contacts) {
+    //                    return Contacts.getContacts();
+    //                }
+//                }
             })
             .when("/new/contact", {
                 controller: "NewContactController",
@@ -70,8 +70,8 @@ angular.module("contactsApp", ['ngRoute'])
                 });
         }
     })
-    .controller("ListController", function(contacts, $scope) {
-        $scope.contacts = contacts.data;
+    .controller("ListController", function($scope) {
+        //$scope.contacts = contacts.data;
     })
     .controller("NewContactController", function($scope, $location, Contacts) {
         $scope.back = function() {
