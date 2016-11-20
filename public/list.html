@@ -1,13 +1,37 @@
-<html>
-<head>
 <style type = "text/css">
-body {
+.bgimg {
   background-image: url('websitebackground.jpg');
   background-repeat: no-repeat;
   background-position: center center;
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
+p {
+  font-size: 14pt;
+  font-family: "Color Plate Light";
+  color: #dfdede;
+  padding-top: 0px;
+  line-height: 16px;
+}
+
 </style>
-</head>
-<body>
-</body>
-</html>
+<div class = "bgimg">
+  <div class = "title" style="padding-left: 35%; padding-top: 320px">
+    <div> <p> NAME// </p> </div>
+    <div> <p> BIRTHDATE// </p> </div>
+    <div> <p> GENDER// </p> </div>
+    <div> <p> SEXUAL ORIENTATION// </p> </div>
+    <div> <p> INTERESTS// </p> </div>
+    <div> <p> LIFE GOALS// </p> </div>
+  </div>
+</div>
