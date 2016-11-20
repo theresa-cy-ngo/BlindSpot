@@ -1,4 +1,4 @@
-angular.module("contactsApp", ['ngRoute'])
+angular.module("bldSpotApp", ['ngRoute'])
     .config(function($routeProvider) {
         $routeProvider
             .when("/", {
